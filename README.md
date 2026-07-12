@@ -1,4 +1,4 @@
-A simple tool to calibrate an image plane for calibrated sketch building when reverse engineering parts.
+A simple tool for FreeCAD to resize an image plane for calibrated sketch building when reverse engineering parts.
 
 ## Features
 - GUI dialog
