@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
-  <name>CalibrateImage</name>
+  <name>ImageCalibration</name>
   <description>
-    A simple tool to calibrate an image plane for calibrated sketch building when reverse engineering parts.
+    A workbench to calibrate imported Image Planes to real-world dimensions,
+    for use as accurate reference when reverse engineering parts in FreeCAD.
+    Click two reference points on the image, enter the known real-world distance,
+    and the image plane is scaled to match.
   </description>
   <version>1.0.0</version>
   <date>2026-07-12</date>
 
-  <maintainer email="Fred2479@proton.me">Your Name</Fred>
+  <maintainer email="Fred2479@proton.me">Fred</maintainer>
 
   <license file="LICENSE">LGPL-2.1-or-later</license>
 
@@ -17,10 +20,9 @@
   <icon>Resources/icons/ruler.svg</icon>
 
   <content>
-    <workbench>CalibrateImage</workbench>
+    <workbench classname="ImageCalibrationWorkbench"/>
   </content>
 
-  <dependencies>
-    <freecad>1.0</freecad>
-  </dependencies>
+  <freecadmin>1.0</freecadmin>
+
 </package>
