@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
   <name>ImageCalibration</name>
-  <description>
-    A workbench to calibrate imported Image Planes to real-world dimensions,
-    for use as accurate reference when reverse engineering parts in FreeCAD.
-    Click two reference points on the image, enter the known real-world distance,
-    and the image plane is scaled to match.
-  </description>
+  <description>A workbench to calibrate imported Image Planes to real-world dimensions, for use as accurate reference when reverse engineering parts in FreeCAD.</description>
   <version>1.0.0</version>
   <date>2026-07-12</date>
 
@@ -15,14 +10,18 @@
   <license file="LICENSE">LGPL-2.1-or-later</license>
 
   <url type="repository" branch="main">https://github.com/NovelaDevices/CalibrateImage</url>
+  <url type="readme">https://github.com/NovelaDevices/CalibrateImage/raw/main/README.md</url>
   <url type="bugtracker">https://github.com/NovelaDevices/CalibrateImage/issues</url>
 
   <icon>Resources/icons/ruler.svg</icon>
 
   <content>
-    <workbench classname="ImageCalibrationWorkbench"/>
+    <workbench>
+      <classname>ImageCalibrationWorkbench</classname>
+      <subdirectory>./</subdirectory>
+    </workbench>
   </content>
 
-  <freecadmin>1.0</freecadmin>
+  <freecadmin>1.0.0</freecadmin>
 
 </package>
